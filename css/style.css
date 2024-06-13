@@ -1,0 +1,18 @@
+.bg-dark {
+    background-color: #333;
+    color: #fff;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.visible {
+    opacity: 1;
+}
+.content {
+    height: 500px; /* Para simular contenido largo */
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    padding: 20px;
+}

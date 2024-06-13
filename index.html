@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link
+      rel="icon"
+      href="https://img.icons8.com/emoji/48/skull-and-crossbones.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+    <!-- encryptar en sha256-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- Barra de Navegación -->
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Marca y alternar agrupados para mejor visualización en dispositivos móviles -->
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#navbar"
+              aria-expanded="false"
+              aria-controls="navbar"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li>
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><img
+                    width="20px"
+                    height="100%"
+                    src="https://img.icons8.com/color/48/skull.png"
+                    alt="skull"
+                /></a>
+              </li>
+              <li class="active"><a href="#">SKILL</a></li>
+              <li><a href="#id_acerca">ACERCA</a></li>
+              <li><a href="#">CONTACTO</a></li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+        <!--/.container-fluid -->
+      </nav>
+    </header>
+    <div
+      id="div_inicio"
+      class="container-fluid text-center bg-dark text-white  fade-in"
+    >
+      <div class="row justify-content-center">
+        <div class="mx-auto">
+          <div class="row justify-content-center" style="margin-top: 12%">
+            <img
+              id="gravatar-image"
+              class="fade-in"
+              alt="..."
+              style="height: 100px; width: 100px"
+            />
+          </div>
+          <div class="row justify-content-center">
+            <h1>Franklin Sequeira</h1>
+          </div>
+          <div class="row justify-content-center">
+            <p>Desarrollador Junior</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center mt-5 content fade-in">
+      <div class="row">
+        <div class="col-md-3 mx-auto">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg"
+              class="card-img-top"
+              style="max-height: 100px"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title fs-6">GOLANG</h5>
+              <p class="card-text fs-12">
+                Go es un lenguaje de programación concurrente y compilado con
+                tipado estático inspirado en la sintaxis de C, pero con
+                seguridad de memoria y recolección de basura. Ha sido
+                desarrollado por Google9​ y sus diseñadores iniciales fueron
+                Robert Griesemer, Rob Pike y Ken Thompson.
+              </p>
+            </div>
+            <a href="https://go.dev/" target="_blank" class="btn btn-primary"
+              >IR</a
+            >
+          </div>
+        </div>
+
+        <div class="col-md-3 mx-auto">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+              class="card-img-top"
+              style="max-height: 100px"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title fs-6">PYTHON</h5>
+              <p class="card-text fs-12">
+                Go es un lenguaje de programación concurrente y compilado con
+                tipado estático inspirado en la sintaxis de C, pero con
+                seguridad de memoria y recolección de basura. Ha sido
+                desarrollado por Google9​ y sus diseñadores iniciales fueron
+                Robert Griesemer, Rob Pike y Ken Thompson.
+              </p>
+            </div>
+            <a
+              href="https://www.python.org/"
+              target="_blank"
+              class="btn btn-primary"
+              >IR</a
+            >
+          </div>
+        </div>
+
+        <div class="col-md-3 mx-auto">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original.svg"
+              class="card-img-top"
+              style="max-height: 100px"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title fs-6">RUBY</h5>
+              <p class="card-text fs-12">
+                Go es un lenguaje de programación concurrente y compilado con
+                tipado estático inspirado en la sintaxis de C, pero con
+                seguridad de memoria y recolección de basura. Ha sido
+                desarrollado por Google9​ y sus diseñadores iniciales fueron
+                Robert Griesemer, Rob Pike y Ken Thompson.
+              </p>
+            </div>
+            <a href="https://go.dev/" target="_blank" class="btn btn-primary"
+              >IR</a
+            >
+          </div>
+        </div>
+
+        <div class="col-md-3 mx-auto">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-original-wordmark.svg"
+              class="card-img-top"
+              style="max-height: 100px"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title fs-6">RAILS</h5>
+              <p class="card-text fs-12">
+                Go es un lenguaje de programación concurrente y compilado con
+                tipado estático inspirado en la sintaxis de C, pero con
+                seguridad de memoria y recolección de basura. Ha sido
+                desarrollado por Google9​ y sus diseñadores iniciales fueron
+                Robert Griesemer, Rob Pike y Ken Thompson.
+              </p>
+            </div>
+            <a href="https://go.dev/" target="_blank" class="btn btn-primary"
+              >IR</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12">
+        <div class="row">
+          <div class="col-md-3 mx-auto">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+                class="card-img-top"
+                style="max-height: 100px"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-6">C SHARP</h5>
+                <p class="card-text fs-12">
+                  Go es un lenguaje de programación concurrente y compilado con
+                  tipado estático inspirado en la sintaxis de C, pero con
+                  seguridad de memoria y recolección de basura. Ha sido
+                  desarrollado por Google9​ y sus diseñadores iniciales fueron
+                  Robert Griesemer, Rob Pike y Ken Thompson.
+                </p>
+              </div>
+              <a
+                href="https://dotnet.microsoft.com/es-es/languages/csharp"
+                target="_blank"
+                class="btn btn-primary"
+                >IR</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-3 mx-auto">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                class="card-img-top"
+                style="max-height: 100px"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-6">HTML</h5>
+                <p class="card-text fs-12">
+                  Go es un lenguaje de programación concurrente y compilado con
+                  tipado estático inspirado en la sintaxis de C, pero con
+                  seguridad de memoria y recolección de basura. Ha sido
+                  desarrollado por Google9​ y sus diseñadores iniciales fueron
+                  Robert Griesemer, Rob Pike y Ken Thompson.
+                </p>
+              </div>
+              <a href="https://go.dev/" target="_blank" class="btn btn-primary"
+                >IR</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-3 mx-auto">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                class="card-img-top"
+                style="max-height: 100px"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-6">JAVASCRIPT</h5>
+                <p class="card-text fs-12">
+                  Go es un lenguaje de programación concurrente y compilado con
+                  tipado estático inspirado en la sintaxis de C, pero con
+                  seguridad de memoria y recolección de basura. Ha sido
+                  desarrollado por Google9​ y sus diseñadores iniciales fueron
+                  Robert Griesemer, Rob Pike y Ken Thompson.
+                </p>
+              </div>
+              <a
+                href="https://developer.mozilla.org/es/docs/Web/JavaScript"
+                target="_blank"
+                class="btn btn-primary"
+                >IR</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-3 mx-auto">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+                class="card-img-top"
+                style="max-height: 100px"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-6">POSTGRESQL</h5>
+                <p class="card-text fs-12">
+                  Go es un lenguaje de programación concurrente y compilado con
+                </p>
+              </div>
+              <a
+                href="https://www.postgresql.org/"
+                target="_blank"
+                class="btn btn-primary"
+                >IR</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div
+        class="container-fluid bg-dark text-white py-5 "
+        style="height: 100px; margin-top: 2%"
+      >
+        <h2 id="id_acerca">ACERCA</h2>
+      </div>
+    </div>
+  </body>
+  <script src="js/javascript.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous"
+  />
+
+  <!-- Optional theme -->
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous"
+  />
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"
+  ></script>
+</html>
